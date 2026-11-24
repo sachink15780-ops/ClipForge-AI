@@ -1,21 +1,29 @@
-# ClipForge AI — Creator Studio
+# ClipForge AI — Creator Clipping Studio ✂️
 
-A mobile-friendly starter dashboard for clip planning and creator organization.
+Premium responsive frontend prototype for a video clipping workflow.
 
-## Included
-- Responsive dashboard
-- Local video preview (uploaded video stays in browser)
-- Clip idea/timestamp organizer
-- 15/30/60-second presets and 9:16/16:9 formats
-- Creator tracker stored locally
-- Hook/title brainstorming
-- Local browser storage
+## Frontend
+- Video/stream URL form
+- Clip count and length controls
+- 9:16 vertical and 16:9 landscape toggles
+- Subtitle language/style controls
+- Auto zoom, burn subtitles and face tracking toggles
+- Creator channel watchlist saved in browser localStorage
+- Project library with save, copy details and delete
+- Mobile-responsive dashboard
 
-## Important limitations
-This is a frontend starter. It does not yet perform real AI moment detection, video trimming/export, YouTube stream capture, live monitoring, accounts, or cloud storage. The app never downloads YouTube videos or bypasses access controls. Use uploaded video you own or have permission to edit.
+## Current limitations — honest status
+This is a **frontend prototype**. It does not yet download/process YouTube media, generate MP4 clips, run AI highlight detection, monitor creators in the background, or export subtitle files. Saving a project currently saves settings/metadata, not actual video clips.
 
-## Run
-Open index.html directly or deploy as a static site (GitHub Pages).
+## Next backend work
+- Authenticated backend API and job queue
+- FFmpeg processing worker for real crop/export in 9:16 and 16:9
+- Speech-to-text and moment scoring to choose highlights
+- Subtitle rendering/style templates
+- Safe source ingest for media that users own or are authorized to process
+- Background creator live-status monitoring and notification workflow using compliant source access
+- Storage for generated files and secure download links
+- Per-user data isolation, access controls, rate limiting, retention, and deletion
 
-## Privacy
-Data is stored in localStorage in this browser. Avoid shared/public devices. Clearing browser site data deletes saved clip ideas and creator list.
+## GitHub Pages
+Workflow: `.github/workflows/pages.yml`. Enable Pages in Settings → Pages and choose GitHub Actions if it is not already enabled.
